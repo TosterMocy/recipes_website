@@ -1,6 +1,9 @@
 body{
     background-color: rgb(233, 160, 172);
     font-family: "Papyrus", Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
 }
 
 .title{
@@ -9,11 +12,66 @@ body{
     background-color: rgb(221, 139, 84);
     padding: 10px;
     text-shadow:2px -2px 1px rgb(197, 67, 121) ;
+    margin-top: -5px;
+}
+
+.title.mainpage{
+    margin-top: 20px;
+}
+
+.menu{
+    display: block;
+    /* border: 2px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+    border-bottom: 4px solid rgb(221, 139, 84);
+}
+
+.menu ul{
+    list-style: none;/* display: inline block; */
+    /* background-color: red; */
+    display: inline block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    /* text-align: left; */
+}
+
+.menu ul li{
+    display: inline;
+    background-color: rgb(228, 185, 199);
+    border: 4px ridge rgb(224, 157, 80);
+    
+    padding: 5px 20px ;
+    margin: 2px;
+    
+}
+.menu ul li a{
+    display: inline block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    /* background-color: cyan; */
+}
+
+.menu ul li:hover{
+    background-color:rgb(211, 137, 162) ;
+}
+.link{
+    padding: 5px  20px;
+    width: inherit;
+    margin: -20px;
+    text-decoration: none;
+    font-size: 18px; 
+    color: rgb(119, 59, 41);
 }
 
 
 
-img{
+
+.photo{
     width: 500px;
     height: auto;
     display: block;
@@ -26,28 +84,91 @@ img{
 }
 
 div.list-container{
+    margin: 30px auto;
+    width: 100%;
     text-align: center;
-    /*background-color: rgb(235, 185, 139);*/
-    margin-bottom: 10px;
+    /* background-color: rgb(235, 185, 139); */
 
 }
 
 .recipes-list{
     
-    display: inline-block;
-    text-align: left;
+    /* background-color: cyan; */
+    padding: 0;
+    list-style: none;
 }
 
-.recipes-list a{
+.recipes-list li{
+    display: block;
+    margin: 10px auto;
+    width: 20%;
+    /* background-color: gold; */
+    /* text-align: center; */
+    /* width: 15%; */
     font-size: 24px;
     color: rgb(131, 4, 114);
     font-style: italic;
     font-family: "Brush Script MT", serif;
+    font-weight: bolder;
 
+}
+
+.recipes-list li a{
+    text-decoration: none;
+    color: rgb(119, 59, 41);
+    border: 5px ridge rgb(241, 193, 227);
+}
+
+.recipes-list li a:hover{
+    color: rgb(73, 26, 12)
 }
 
 h3{
     font-size: 26px;
     color: rgb(59, 2, 59);
     text-decoration: underline overline;
+}
+
+.back-button{
+    display: inline-block;
+    padding: 2px;
+    margin: 2px;
+}
+
+
+.text-content{
+    /* margin: 5px 10px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 10%; */
+    width: 800px;
+    margin-bottom: 50px;
+    
+}
+.text-content img{
+    margin-top: 15px;
+}
+
+.back-button a img{
+    width: 20px;
+    height: auto;
+    padding: 2px 5px;
+}
+
+.important-text{
+    color: rgb(197, 69, 107);
+    font-weight: bold;
+}
+
+.text-content li{
+    margin: 3px auto;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bold li{
+    font-weight: normal;
 }
